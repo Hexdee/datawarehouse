@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="./index.js"></script>
+    <title>Data Warehouse</title>
+</head>
+
+<body onload="getItems()">
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="short-rectangle"></div>
+                    <div class="long-rectangle"></div>
+                </div>
+                <i class="fas fa-bars burger" id="menu-icon"></i>
+            </div>
+            <ul>
+                <li class="active-page">About</li>
+                <li>Help</li>
+                <li>Feature</li>
+                <li>Signup</li>
+            </ul>
+            <a href="/demo.html">
+                <button class="demo-button">
+                    Request Demo
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </a>
+            <div class="mobile-nav">
+                <a href="#about-section">
+                    <p>About</p>
+                </a>
+                <a href="#help-section">
+                    <p>Help</p>
+                </a>
+                <a href="#feature-section">
+                    <p>Feature</p>
+                </a>
+                <a href="#signup-section">
+                    <p>Signup</p>
+                </a>
+                <a href="/demo.html">
+                    <button class="mobile-demo-button">
+                        Request Demo
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Items</h1>
+        <table id="items">
+            <tr>
+                <th>ID</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+
+            <tr>
+                <td id="loading-items" colspan="3">Loading items...</td>
+            </tr>
+
+        </table>
+
+        <h2>Upload a new Item</h2>
+
+        <div class="container">
+            <form``>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="id">ID</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="id" name="id" placeholder="Item ID...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Item Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Item name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="price">Item Price</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="price" name="price" placeholder="Item price..">
+                    </div>
+                </div>
+
+
+                <br>
+                <div class="row">
+                    <input id="add-item" type="button" value="Submit" onclick="addItem()">
+                </div>
+                </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div>
+                <h3>Try for free!</h3>
+                <p>Get limited 1 week free try our features!</p>
+            </div>
+            <div class="buttons">
+                <button class="button-1">Learn more</button>
+                <button class="demo-button">Request demo <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div>
+                <h3>
+                    <div class="logo">
+                        <div class="short-rectangle"></div>
+                        <div class="long-rectangle"></div>
+                    </div>
+                    DataWarehouse
+                </h3>
+                <p>Warehouse Society, 234</p>
+                <p>Bahagia Ave Street PRBW 29281</p>
+                <p>info@warehouse.project</p>
+                <p>1-232-3434 (Main)</p>
+            </div>
+            <div>
+                <h4>About</h4>
+                <p>Profile</p>
+                <p>Features</p>
+                <p>Careers</p>
+                <p>DW News</p>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <p>Support</p>
+                <p>Sign up</p>
+                <p>Guide</p>
+                <p>Reports</p>
+                <p>Q&A</p>
+            </div>
+            <div>
+                <h4>Social Media</h4>
+                <div class="social-icons">
+                    <div class="facebook">
+                        <img src="./images/Combined-Shape-path.png" alt="facebook" width="9.58px">
+                    </div>
+                    <div class="twitter">
+                        <img src="./images/twitter.png" alt="twitter" width="18.27px">
+                    </div>
+                    <div class="instagram">
+                        <img src="./images/Vector.png" alt="instagram" width="16">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <p>© Datawarehouse™, 2020. All rights reserved.</p>
+                <p>Company Registration Number: 21479524.</p>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
